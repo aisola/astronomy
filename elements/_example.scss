@@ -1,0 +1,45 @@
+
+.example {
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+
+  .example-title {
+    border-bottom: 2px solid $primary;
+    color: $primary;
+    padding-bottom: 1rem;
+  }
+
+  .example-subtitle {
+    color: $primary;
+    padding-bottom: 1rem;
+  }
+
+  .example-content {
+    background-color: $white;
+    border-radius: 2px;
+    padding: 1rem;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+  // Desktops
+  .example {
+    margin-bottom: 1rem;
+    padding: 0 100px;
+
+    .example-title {
+      padding-bottom: 1rem;
+    }
+
+    .example-subtitle {
+      padding-bottom: 1rem;
+    }
+
+    .example-content {
+      padding: 1rem;
+    }
+
+  }
+}

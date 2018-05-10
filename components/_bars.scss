@@ -1,0 +1,47 @@
+
+.bar {
+  background-color: $space-dark;
+  box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.1);
+  color: $white;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  font-size: 14px;
+  justify-content: center;
+  padding: 8px 24px;
+  text-align: center;
+
+  p {
+    color: $white;
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    line-height: 1;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .button {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  // Desktops
+  .bar {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 8px 24px;
+    text-align: left;
+
+    p {
+      flex: 5 0 auto;
+      padding: 0.5rem 0.75rem;
+      line-height: 1;
+      margin: 0;
+      vertical-align: middle;
+    }
+  }
+}

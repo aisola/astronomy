@@ -1,0 +1,90 @@
+.button {
+  @extend .control;
+
+  display: block;
+  background-color: $white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: findColorInvert($white);
+  cursor: pointer;
+  flex: 1;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    background-color: darken($white, 5%);
+  }
+
+  @each $name, $color in $colors {
+    $color-invert: findColorInvert($color);
+    $color-darked: darken($color, 5%);
+
+    &.is-#{$name} {
+      background-color: $color;
+      color: $color-invert;
+
+      &:hover {
+        background-color: $color-darked;
+      }
+    }
+
+  }
+
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  .button {
+    display: inline-block;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  // Desktops
+  .button {
+    margin-right: 1rem;
+    margin-bottom: 0;
+    padding: 0.5rem 0.75rem;
+    width: auto;
+  }
+
+  .buttons {
+    display: table;
+    text-align: left;
+    width: 100%;
+
+    .button {
+      display: table-cell;
+      flex: 1 auto 0;
+      white-space: nowrap;
+    }
+
+    &.is-center {
+      text-align: center;
+    }
+
+    &.is-justified {
+      display: flex;
+      flex-direction: row;
+
+      .button {
+        display: inline-block;
+      }
+    }
+
+    &.is-right {
+      text-align: right;
+    }
+
+  }
+
+}

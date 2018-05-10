@@ -1,0 +1,36 @@
+
+// White and Black
+$white: #ffffff;
+$black: #000000;
+
+// Space Colors
+$space-red: #d9534f;
+$space-orange: #df691a;
+$space-yellow: #f0ad4e;
+$space-green: #5cb85c;
+$space-blue: #209cee;
+$space-purple: #32325d;
+$space-grey: #f1f5f9;
+$space-dark: #3c4858;
+
+// Framework Colors
+$primary: $space-purple;
+$info: $space-blue;
+$success: $space-green;
+$warning: $space-yellow;
+$danger: $space-red;
+$text: $space-purple;
+$heads: $space-purple;
+
+// Colors
+$colors: (
+  "primary": $primary,
+  "info": $info,
+  "success": $success,
+  "warning": $warning,
+  "danger": $danger,
+  "white": $white,
+  "black": $black,
+  "light": $space-grey,
+  "dark": $space-dark
+);

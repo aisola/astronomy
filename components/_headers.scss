@@ -1,0 +1,30 @@
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  padding: 24px;
+  position: relative;
+
+  .header-brand {
+    order: -1;
+    text-align: center;
+    text-transform: lowercase;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  // Desktops
+  .header {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 24px;
+
+    .header-brand {
+      text-align: left;
+    }
+  }
+}
